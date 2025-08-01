@@ -6,7 +6,6 @@ export default function Player({initialName, symbol, isActive}) {
 
     function handleEditClick() {
         setIsEditing(prevIsEdit => !prevIsEdit);
-        OnSelectTurn()
       }
 
     function handleChange(event) {
