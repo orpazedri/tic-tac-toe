@@ -14,7 +14,7 @@ for (const turn of turns) {
     const { square, player } = turn;
     const { row, col } = square;
 
-    game[row][col] = player; // Update the game board with the player's symbol
+    gameBoard[row][col] = player; // Update the game board with the player's symbol
 }
 
 
@@ -37,7 +37,7 @@ for (const turn of turns) {
                     <ol>
                         {row.map((playerSymbol, colIndex) => (
                             <li key={colIndex}>
-                                <button onClick={() => onSelecetSquare(rowIndex, colIndex)}>{playerSymbol}</button>
+                                <button onClick={() => onSelectSquare(rowIndex, colIndex)}>{playerSymbol}</button>
                             </li>
                         ))}
                     </ol>
