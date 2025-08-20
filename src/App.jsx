@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Player from "./components/Player"
 import GameBoard from "./components/GameBoard"
+import Log from "./components/Log";
 import './index.css';
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
           turns={gameTurns}   
         />
       </div>
-      LOG
+      <Log turns={gameTurns}/>
     </main>
   );
 }
